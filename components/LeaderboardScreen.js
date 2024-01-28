@@ -10,7 +10,7 @@ const LeaderboardScreen = () => {
         .then(({ default: users }) => {
           const leaderboardData = users.map((user, index) => ({
             userName: user.username,
-            highScore: user.points,
+            highScore: user.coordinates.length,
             key: index,
           }));
           setData(leaderboardData);
