@@ -16,13 +16,12 @@ import { useFonts } from 'expo-font';
 // </TouchableOpacity>      
 //     </View>
 function HomeScreen({ navigation, route }) {
-    // const { username } = route.params;
+     const { username } = route.params;
     const [fontsLoaded] = useFonts({
     'frutiga': require('./SwitzeraADF-Regular.ttf'),
     });
     return (
         <View style={styles.container}>
-            <Text> Home Screen </Text>
             <Image
                 source={{
                     uri: 'https://s202.q4cdn.com/986123435/files/doc_downloads/logos/american-airlines/THUMB-aa_aa__ahz_4cp_grd_pos-(1).png',
@@ -30,7 +29,7 @@ function HomeScreen({ navigation, route }) {
             style={styles.logo}
             />
             <Button onPress={() => navigation.navigate('Details')} title='Go to Details'/>
-            <Button onPress={() => navigation.navigate('Map', {})} title='Go to Map'/>
+            <Button onPress={() => navigation.navigate('Map', { username })} title='Go to Map'/>
             <Button onPress={() => navigation.navigate('LeaderboardScreen')} title='Go to Leaderboard'/>
             <TouchableOpacity style={styles.logoutButton} onPress={() => navigation.replace('Login')}>
                 <Text style={styles.logoutText}>Logout</Text>
