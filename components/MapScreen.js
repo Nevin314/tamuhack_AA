@@ -62,7 +62,7 @@ const MapScreen = ({ route }) => {
           longitude: coord[1],
         }}
         title={user.username}
-        description={`Point ${index + 1}`}
+        description={user.review}
       />
     ));
 
@@ -83,7 +83,7 @@ const loadGlobalMarkers = () => {
             longitude: coord[1],
           }}
           title={user.username}
-          description={`Point ${index + 1}`}
+          description={user.review}
         />
       ));
     }
