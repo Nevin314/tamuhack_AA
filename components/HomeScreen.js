@@ -16,13 +16,14 @@ import { useFonts } from 'expo-font';
 // </TouchableOpacity>      
 //     </View>
 function HomeScreen({ navigation, route }) {
-     const { username } = route.params;
+    // const { username } = route.params;
     const [fontsLoaded] = useFonts({
     'frutiga': require('./SwitzeraADF-Regular.ttf'),
     });
     return (
         <>
         <View style={styles.container}>
+            <Text style={styles.welcome}>Your flights with</Text>
             <Image
                 source={{
                     uri: 'https://s202.q4cdn.com/986123435/files/doc_downloads/logos/american-airlines/THUMB-aa_aa__ahz_4cp_grd_pos-(1).png',
@@ -36,7 +37,6 @@ function HomeScreen({ navigation, route }) {
                 <Text style={styles.logoutText}>Logout</Text>
             </TouchableOpacity>
         </View>
-        <Chatbot />
         </>
     );
 }
@@ -61,10 +61,18 @@ const styles = StyleSheet.create({
     text: {
         color: 'black', 
         fontWeight: 'bold',
-        marginBottom: 60,
         fontSize: 40,
         color: '#45586a',
         fontFamily: 'frutiga',
+    },
+    welcome: {
+        color: 'black', 
+        fontWeight: 'bold',
+        marginBottom: 60,
+        fontSize: 40,
+        color: '#45586a',
+        textAlign: 'center',
+        width: Dimensions.get('window').width,
     },
     logo: {
       width: 393,

@@ -1,4 +1,5 @@
 import { GiftedChat } from 'react-native-gifted-chat';
+import { StyleSheet, Text, View, Button, TextInput, Image, Alert, Dimensions } from 'react-native';
 import React, { useState, useEffect } from 'react';
 
 function ChatScreen() {
@@ -38,4 +39,37 @@ function ChatScreen() {
     />
   );
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 120
+    },
+    logoutButton: {
+        backgroundColor: 'blue', 
+        padding: 10, 
+        borderRadius: 5,
+        marginTop: 10, // Add some margin at the top for spacing
+    },
+    logoutText: {
+        color: 'white', 
+        fontWeight: 'bold',
+    },
+    text: {
+        color: 'black', 
+        fontWeight: 'bold',
+        marginBottom: 60,
+        fontSize: 40,
+        color: '#45586a',
+    },
+    logo: {
+      width: 393,
+      height: 150,
+      marginTop: Dimensions.get('window').height / 2 - 490,
+      marginBottom: 30,
+    },
+});
+
 export default ChatScreen;

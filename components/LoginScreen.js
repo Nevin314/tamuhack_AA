@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import {Dimensions} from 'react-native';
-import { StyleSheet, Text, View, Button, TextInput, Image, Alert } from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput, Image, Alert, Dimensions } from 'react-native';
 import HomeScreen from './HomeScreen'
 import * as FileSystem from 'expo-file-system';
 import usersFile from './users.json'
@@ -97,7 +96,7 @@ const styles = StyleSheet.create({
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#dfdfdf',
+      backgroundColor: '#ffffff',
       padding: 20,
     },
     logo: {
@@ -110,12 +109,11 @@ const styles = StyleSheet.create({
       height: 40,
       width: '80%',
       marginBottom: 25,
-      marginVertical: 5,
       borderWidth: 1,
       padding: 10,
       borderColor: '#ddd',
       borderRadius: 5,
-      backgroundColor: '#fff',
+      backgroundColor: '#dfdfdf',
     },
   });
   
