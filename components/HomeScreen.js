@@ -16,7 +16,7 @@ import { useFonts } from 'expo-font';
 // </TouchableOpacity>      
 //     </View>
 function HomeScreen({ navigation, route }) {
-    // const { username } = route.params;
+    const { username } = route.params;
     const [fontsLoaded] = useFonts({
     'frutiga': require('./SwitzeraADF-Regular.ttf'),
     });
