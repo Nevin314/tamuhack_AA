@@ -21,6 +21,7 @@ function HomeScreen({ navigation, route }) {
     'frutiga': require('./SwitzeraADF-Regular.ttf'),
     });
     return (
+        <>
         <View style={styles.container}>
             <Image
                 source={{
@@ -35,6 +36,8 @@ function HomeScreen({ navigation, route }) {
                 <Text style={styles.logoutText}>Logout</Text>
             </TouchableOpacity>
         </View>
+        <Chatbot />
+        </>
     );
 }
 
