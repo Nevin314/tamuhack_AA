@@ -114,7 +114,7 @@ const loadGlobalMarkers = () => {
         onPress={() => loadMarkers(username)}
       >
         <Text style={{ color: "white", fontWeight: "bold" }}>
-          Load {username} 's Markers
+          Load My Markers
         </Text>
       </TouchableOpacity>
       <TouchableOpacity
