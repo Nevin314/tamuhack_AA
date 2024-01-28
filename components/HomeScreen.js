@@ -31,7 +31,7 @@ function HomeScreen({ navigation }) {
           <View style={styles.buttonContainer}>
             <CustomButton title="Go to Chatbot" onPress={() => navigation.navigate('Chatbot')} />
             <CustomButton title="Go to Map" onPress={() => navigation.navigate('Map', {})} />
-            <CustomButton title="Go to Leaderboard" onPress={() => navigation.navigate('LeaderboardScreen')} />
+            <CustomButton title="Go to Leaderboard" onPress={() => navigation.navigate('Leaderboard')} />
           </View>
           <CustomButton title="Logout" onPress={() => navigation.replace('Login')} />
         </SafeAreaView>

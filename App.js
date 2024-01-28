@@ -42,7 +42,7 @@ export default function App() {
         <Stack.Screen name = "Home" component={HomeScreen} />
         <Stack.Screen name = "Details" component={DetailsScreen} />
         <Stack.Screen name = "Map" component={MapScreen} />
-        <Stack.Screen name = "LeaderboardScreen" component={LeaderboardScreen} />
+        <Stack.Screen name = "Leaderboard" component={LeaderboardScreen} />
         <Stack.Screen name = "SignUp" component={SignUpScreen} />
       </Stack.Navigator>
     </NavigationContainer>
